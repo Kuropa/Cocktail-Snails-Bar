@@ -1,0 +1,344 @@
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Staatliches", sans-serif;
+  font-size: 16px;
+}
+@media (min-width: 767px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+.fs-s40 {
+  font-size: 30px;
+}
+@media (min-width: 767px) {
+  .fs-s40 {
+    font-size: 50px;
+  }
+}
+.fs-s30 {
+  font-size: 20px;
+}
+@media (min-width: 1199px) {
+  .fs-s30 {
+    font-size: 30px;
+  }
+}
+.fs-s18 {
+  font-size: 18px;
+}
+@media (min-width: 1199px) {
+  .fs-s18 {
+    font-size: 30px;
+  }
+}
+.fs-s13 {
+  font-size: 13px;
+}
+@media (min-width: 991px) {
+  .fs-s13 {
+    font-size: 14px;
+  }
+}
+
+.ff-fs {
+  font-family: "Staatliches", sans-serif;
+}
+.ff-fm {
+  font-family: "Caveat", sans-serif;
+}
+
+.color-white {
+  color: white;
+}
+.color-black {
+  color: #282423;
+}
+.color-done {
+  color: #28c733;
+}
+
+.underline {
+  border-bottom: 1px solid #282423;
+}
+.underline-done {
+  border-bottom: 1px solid #28c733;
+}
+
+.container {
+  max-width: 1440px;
+}
+
+.icon {
+  width: 30px;
+}
+.icon-logo {
+  width: 40px;
+}
+
+header {
+  background-color: #242d2e;
+}
+header .offer-back {
+  height: 70vh;
+  background-image: url("../img/sky.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
+}
+@media (min-width: 1199px) {
+  header .offer-back {
+    height: calc(100vh - 59px);
+    background-position-x: center;
+  }
+}
+header .offer-menu {
+  background-color: #242d2e;
+}
+header .offer-bar {
+  position: absolute;
+  background-image: url("../img/bar.png");
+  width: 100%;
+  height: 100%;
+  background-size: 480px;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: right;
+}
+@media (min-width: 767px) {
+  header .offer-bar {
+    background-size: 675px;
+    background-image: url("../img/Banner_big2.webp");
+  }
+}
+@media (min-width: 991px) {
+  header .offer-bar {
+    background-size: 850px;
+  }
+}
+@media (min-width: 1199px) {
+  header .offer-bar {
+    background-size: 1100px;
+  }
+}
+header nav .navbar-toggler {
+  border: none;
+}
+header nav .navbar-toggler:focus {
+  outline: none;
+}
+header .icon-wrapper {
+  background-color: white;
+  border-radius: 50%;
+}
+
+main .roadmap-center {
+  margin-top: 245px;
+}
+@media (min-width: 767px) {
+  main .roadmap-center {
+    margin-top: 0;
+  }
+}
+main .roadmap-img {
+  background-image: url("../img/Roadmap.png");
+  background-repeat: no-repeat;
+  background-size: 502px;
+  background-position: top center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: auto;
+  z-index: 0;
+}
+@media (min-width: 767px) {
+  main .roadmap-img {
+    width: 767px;
+    height: 550px;
+    background-size: cover;
+  }
+}
+@media (min-width: 1199px) {
+  main .roadmap-img {
+    background-image: url("../img/Roadmap.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    width: 1199px;
+    height: 750px;
+    z-index: 0;
+    background-size: calc(100% + 50px);
+  }
+}
+@media (min-width: 767px) {
+  main .roadmap-text {
+    width: max-content;
+    position: absolute;
+  }
+}
+@media (min-width: 767px) {
+  main .roadmap-text-t1 {
+    top: 32px;
+    left: 70px;
+  }
+}
+@media (min-width: 1199px) {
+  main .roadmap-text-t1 {
+    top: -5px;
+    left: 105px;
+  }
+}
+@media (min-width: 767px) {
+  main .roadmap-text-t2 {
+    top: 52px;
+    text-align: end;
+    right: 127px;
+  }
+}
+@media (min-width: 1199px) {
+  main .roadmap-text-t2 {
+    top: 26px;
+    right: 180px;
+  }
+}
+@media (min-width: 767px) {
+  main .roadmap-text-t3 {
+    text-align: end;
+    max-width: 115px;
+    right: 267px;
+    top: 183px;
+  }
+}
+@media (min-width: 991px) {
+  main .roadmap-text-t3 {
+    max-width: 221px;
+  }
+}
+@media (min-width: 1199px) {
+  main .roadmap-text-t3 {
+    max-width: 287px;
+    right: 373px;
+    top: 207px;
+  }
+}
+@media (min-width: 767px) {
+  main .roadmap-text-t4 {
+    text-align: end;
+    top: 330px;
+    right: 182px;
+    max-width: 189px;
+  }
+}
+@media (min-width: 991px) {
+  main .roadmap-text-t4 {
+    max-width: 300px;
+  }
+}
+@media (min-width: 1199px) {
+  main .roadmap-text-t4 {
+    top: 415px;
+    right: 254px;
+  }
+}
+@media (min-width: 767px) {
+  main .roadmap-text-t5 {
+    text-align: center;
+    bottom: -37px;
+    left: -6px;
+  }
+}
+@media (min-width: 1199px) {
+  main .roadmap-text-t5 {
+    bottom: 35px;
+    left: -6px;
+  }
+}
+@media (min-width: 767px) {
+  main .roadmap-text-t6 {
+    max-width: 233px;
+    bottom: 28px;
+    left: 145px;
+  }
+}
+@media (min-width: 991px) {
+  main .roadmap-text-t6 {
+    max-width: 300px;
+  }
+}
+@media (min-width: 1199px) {
+  main .roadmap-text-t6 {
+    bottom: 144px;
+    left: 203px;
+    max-width: 366px;
+  }
+}
+@media (min-width: 767px) {
+  main .roadmap-text-t7 {
+    left: 223px;
+    bottom: 145px;
+    max-width: 180px;
+  }
+}
+@media (min-width: 991px) {
+  main .roadmap-text-t7 {
+    max-width: 270px;
+  }
+}
+@media (min-width: 1199px) {
+  main .roadmap-text-t7 {
+    left: 309px;
+    bottom: 310px;
+    max-width: 330px;
+  }
+}
+@media (min-width: 767px) {
+  main .roadmap-text-t8 {
+    left: 132px;
+    max-width: 247px;
+    top: 118px;
+  }
+}
+@media (min-width: 991px) {
+  main .roadmap-text-t8 {
+    max-width: 300px;
+  }
+}
+@media (min-width: 1199px) {
+  main .roadmap-text-t8 {
+    left: 189px;
+    max-width: 405px;
+    top: 113px;
+  }
+}
+
+footer {
+  background-image: url("../img/sky.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*# sourceMappingURL=styles.css.map */

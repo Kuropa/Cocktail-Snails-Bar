@@ -1,0 +1,28 @@
+@mixin _1199 {
+  @media (min-width: 1199px){
+    @content;
+  }
+}
+@mixin _991 {
+  @media (min-width: 991px){
+    @content;
+  }
+}
+
+@mixin _767 {
+  @media (min-width: 767px){
+    @content;
+  }
+}
+@mixin _575 {
+  @media (min-width: 575px){
+    @content;
+  }
+}
+@mixin transition {
+  -webkit-transition: all 0.3s ease-in-out!important;
+  -moz-transition: all 0.3s ease-in-out!important;
+  -ms-transition: all 0.3s ease-in-out!important;
+  -o-transition: all 0.3s ease-in-out!important;
+  transition: all 0.3s ease-in-out!important;
+}

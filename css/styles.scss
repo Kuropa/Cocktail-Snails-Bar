@@ -1,0 +1,319 @@
+@import "mixin";
+//Основной шрифт:
+$mainFont: "Staatliches", sans-serif;
+//Курсив:
+$curFont: "Caveat", sans-serif;
+//Цвет выполненного пункта:
+$doneColor: #28c733;
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: $mainFont;
+  font-size: 16px;
+  @include _767 {
+    font-size: 18px;
+  }
+}
+
+.fs {
+  &-s40 {
+    font-size: 30px;
+    @include _767 {
+      font-size: 50px;
+    }
+  }
+  &-s30 {
+    font-size: 20px;
+    @include  _1199 {
+      font-size: 30px;
+    }
+  }
+
+  &-s18 {
+    font-size: 18px;
+    @include  _1199 {
+      font-size: 30px;
+    }
+  }
+
+  &-s13 {
+    font-size: 13px;
+    @include _991 {
+      font-size: 14px;
+    }
+  }
+}
+
+.ff {
+  &-fs {
+    font-family: $mainFont;
+  }
+  &-fm {
+    font-family: $curFont
+  }
+}
+
+.color {
+  &-white {
+    color: white;
+  }
+  &-black {
+    color: #282423;
+  }
+  &-done {
+    color: $doneColor;
+  }
+}
+
+.underline {
+  border-bottom: 1px solid #282423;
+  &-done {
+    border-bottom: 1px solid $doneColor;
+  }
+}
+
+.container {
+  max-width: 1440px;
+}
+
+.icon {
+  width: 30px;
+  &-logo {
+    width: 40px;
+  }
+}
+
+header {
+  background-color: #242d2e;
+  .offer-back {
+    height: 70vh;
+    background-image: url("../img/sky.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    @include _1199 {
+      height: calc(100vh - 59px);
+      background-position-x: center;
+    }
+  }
+
+  .offer-menu {
+    background-color: #242d2e;
+  }
+
+  .offer-bar {
+    position: absolute;
+    background-image: url("../img/bar.png");
+    width: 100%;
+    height: 100%;
+    background-size: 480px;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: right;
+    @include _767 {
+      background-size: 675px;
+      background-image: url("../img/Banner_big2.webp");
+    }
+    @include _991 {
+      background-size: 850px;
+    }
+    @include _1199 {
+      background-size: 1100px;
+    }
+  }
+  nav {
+    .navbar-toggler {
+      border: none;
+      &:focus {
+        outline: none;
+      }
+    }
+    .navbar-toggler-icon {
+
+    }
+  }
+  .icon-wrapper {
+    background-color: white;
+    border-radius: 50%;
+  }
+}
+
+main {
+  .roadmap-center {
+    margin-top: 245px;
+    @include _767 {
+      margin-top: 0;
+    }
+  }
+  .roadmap-img {
+    background-image: url("../img/Roadmap.png");
+    background-repeat: no-repeat;
+    background-size: 502px;
+    background-position: top center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    @include _767 {
+      width: 767px;
+      height: 550px;
+      background-size: cover;
+    }
+    @include _1199 {
+      background-image: url("../img/Roadmap.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      position: fixed;
+      top: 0;
+      width: 1199px;
+      height: 750px;
+      z-index: 0;
+      background-size: calc(100% + 50px);
+    }
+  }
+
+  .roadmap-text {
+    @include _767 {
+      width: max-content;
+      position: absolute;
+    }
+
+    &-t1 {
+      @include _767 {
+        top: 32px;
+        left: 70px;
+      }
+      @include _1199 {
+        top: -5px;
+        left: 105px;
+      }
+    }
+    &-t2 {
+      @include _767 {
+        top: 52px;
+        text-align: end;
+        right: 127px;
+      }
+      @include _1199 {
+        top: 26px;
+        right: 180px;
+      }
+    }
+    &-t3 {
+      @include _767 {
+        text-align: end;
+        max-width: 115px;
+        right: 267px;
+        top: 183px;
+      }
+      @include _991 {
+        max-width: 221px;
+      }
+      @include _1199 {
+        max-width: 287px;
+        right: 373px;
+        top: 207px;
+      }
+    }
+    &-t4 {
+      @include _767 {
+        text-align: end;
+        top: 330px;
+        right: 182px;
+        max-width: 189px;
+      }
+      @include _991 {
+        max-width: 300px;
+      }
+      @include _1199 {
+        top: 415px;
+        right: 254px;
+      }
+    }
+    &-t5 {
+      @include _767 {
+        text-align: center;
+        bottom: -37px;
+        left: -6px;
+      }
+      @include _1199 {
+        bottom: 35px;
+        left: -6px;
+      }
+    }
+    &-t6 {
+      @include _767 {
+        max-width: 233px;
+        bottom: 28px;
+        left: 145px;
+      }
+      @include _991 {
+        max-width: 300px;
+      }
+      @include _1199 {
+        bottom: 144px;
+        left: 203px;
+        max-width: 366px;
+      }
+    }
+    &-t7 {
+      @include _767 {
+        left: 223px;
+        bottom: 145px;
+        max-width: 180px;
+      }
+      @include _991 {
+        max-width: 270px;
+      }
+      @include _1199 {
+        left: 309px;
+        bottom: 310px;
+        max-width: 330px;
+      }
+    }
+    &-t8 {
+      @include _767 {
+        left: 132px;
+        max-width: 247px;
+        top: 118px;
+      }
+      @include _991 {
+        max-width: 300px;
+      }
+      @include _1199 {
+        left: 189px;
+        max-width: 405px;
+        top: 113px;
+      }
+    }
+  }
+}
+
+footer {
+  background-image: url("../img/sky.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
